@@ -16,7 +16,7 @@ if (isset($_SESSION['id_karyawan'])) {
     <!-- Reset Css -->
     <link rel="stylesheet" href="resetStyle/reset.css">
 
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.css?v=<?php echo time(); ?>">
 
     <!-- Font -->
     <style>
