@@ -2,6 +2,11 @@ html {
     overflow-y: hidden;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 main {
     height: 100vh;
     background: linear-gradient(180deg, #fbeff1 0%, #f2f4f9 50%, #e1f0f6 100%);
@@ -68,8 +73,119 @@ button {
     font-size: 1rem;
     letter-spacing: 1.5px;
     border: none;
-    padding: 0.8rem 7.5rem;
+    padding: 0.8rem 7rem;
     border-radius: 10px;
     margin-top: 0.8rem;
 }
 
+/* Ukuran Laptop */
+@media screen and (max-width: 1366px) {
+    section {
+        width: 35%;
+    }
+}
+
+/* Ukuran Tablet */
+@media screen and (max-width: 1024px) {
+    section {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .greetings {
+        line-height: 35px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+
+    input {
+        padding: 1.6rem 11rem 1.6rem 1.5rem;
+        font-size: 1.7rem;
+    }
+
+    button {
+        padding: 1.2rem;
+        margin: 1rem auto;
+        width: 40%;
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/* Ukuran Handphone Besar */
+@media screen and (max-width: 768px) {
+
+    section {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .greetings {
+        line-height: 35px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    input {
+        padding: 1.3rem 8rem 1.3rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 1rem;
+        margin: 1rem auto;
+        width: 30%;
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+/* Ukuran Handphone Kecil */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    input {
+        padding: 1.1rem 5rem 1.1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.8rem;
+        width: 33%;
+        font-size: 1rem;
+    }
+    
+}
