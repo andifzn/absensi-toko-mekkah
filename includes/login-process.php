@@ -16,7 +16,7 @@ if ($user && password_verify($password, $user['password'])) {
     if ($user['role'] == 'admin') {
         header("Location: ../admin/admin.php");
     } else {
-        header("Location: ../home/pegawai-home.php");
+        header("Location: ../home/home.php");
     }
 } else {
     echo "Login gagal. Cek ID dan password.";
