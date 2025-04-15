@@ -10,8 +10,16 @@ $user = mysqli_fetch_assoc($data);
 
 if ($user && password_verify($password, $user['password'])) {
     $_SESSION['id_karyawan'] = $user['id_karyawan'];
-    header("Location: ../home/home.php");
+    $_SESSION['nama_karyawan'] = $user['nama_karyawan'];
+    $_SESSION['role'] = $user['role'];
+
+    if ($user['role'] == 'admin') {
+        header("Location: ../admin/admin.php");
+    } else {
+        header("Location: ../home/pegawai-home.php");
+    }
 } else {
     echo "Login gagal. Cek ID dan password.";
 }
+
 ?>
