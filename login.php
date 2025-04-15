@@ -1,10 +1,14 @@
 <?php
 session_start();
-// Cek apakah sudah login, kalau iya langsung ke home
 if (isset($_SESSION['id_karyawan'])) {
-    header("Location: home/home.php");
+    if ($_SESSION['role'] == 'admin') {
+        header("Location: admin/admin.php");
+    } else {
+        header("Location: home/home.php");
+    }
     exit;
 }
+
 ?>
 
 
@@ -31,7 +35,7 @@ if (isset($_SESSION['id_karyawan'])) {
                 <h1>Selamat Datang di Toko Mekkah!</h1>
                 <p>Silakan login untuk mulai mencatat kehadiran.</p>
             </div>
-            <form action="../includes/login-process.php" method="POST">
+            <form action="includes/login-process.php" method="POST">
                 <div>
                     <input type="text" id="username" name="id_karyawan" placeholder="Masukkan ID Karyawan" required />
                 </div>
