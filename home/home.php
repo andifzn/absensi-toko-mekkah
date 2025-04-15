@@ -6,5 +6,6 @@ if (!isset($_SESSION['id_karyawan'])) {
 }
 ?>
 <h1>Halo, <?= $_SESSION['id_karyawan']; ?>! 👋</h1>
+<p>role : <?= $_SESSION['role']; ?> </p>
 <p>Selamat datang di sistem absensi Toko Mekkah.</p>
-<a href="../logout.php">Logout</a>
+<a href="logout.php">Logout</a>
