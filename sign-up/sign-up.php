@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <title>Sign Up | Toko Mekkah</title>
 </head>
+
 <body>
     <main>
         <section>
@@ -54,9 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </select>
                 <button type="submit">Daftar</button>
             </form>
-            <p>Sudah punya akun? <a href="../login.php"> Login di sini</a></p> 
+            <p>Sudah punya akun? <a href="../login.php"> Login di sini</a></p>
         </section>
     </main>
-    
+
 </body>
+
 </html>
